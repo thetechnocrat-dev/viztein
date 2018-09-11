@@ -1,6 +1,6 @@
 # Viztein
 
-Viztein is a React library component for **vi**suali**z**ing **tein**s and other macromolecules. The code is a light wrapper around [NGL](https://github.com/arose/ngl) which uses [WebGL](https://get.webgl.org/) for rendering graphics.
+Viztein is a React library component for **vi**suali**z**ing pro**tein**s and other macromolecules. The code is a light wrapper around [NGL](https://github.com/arose/ngl) which uses [WebGL](https://get.webgl.org/) for rendering graphics.
 
 [![npm version](https://badge.fury.io/js/viztein.svg)](https://badge.fury.io/js/viztein)
 
