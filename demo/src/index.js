@@ -9,7 +9,7 @@ class Demo extends Component {
       <div>
         <h1>Viztein Demo</h1>
         <Viztein
-         data={{ filename: "http://files.rcsb.org/download/4hhb.pdb" }}
+         data={{ filename: "https://files.rcsb.org/download/4OO8.pdb" }}
          viewportId="viewport-1"
         />
       </div>

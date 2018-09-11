@@ -30,11 +30,17 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   },
-  "author": "",
+  "author": "Josh McMenemy <josh.mcmenemy@gmail.com>",
   "homepage": "",
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "react-component",
+    "protein-vizualization",
+    "molecular-graphics",
+    "scientific-visualization",
+    "webgl",
+    "ngl",
+    "react"
   ]
 }
