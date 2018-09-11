@@ -1,7 +1,7 @@
 {
   "name": "viztein",
-  "version": "1.0.0",
-  "description": "viztein React component",
+  "version": "0.1.3",
+  "description": "Viztein React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -19,7 +19,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ngl": "^0.10.4"
+  },
   "peerDependencies": {
     "react": "16.x"
   },

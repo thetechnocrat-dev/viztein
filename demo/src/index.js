@@ -1,14 +1,19 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import Example from '../../src'
+import Viztein from '../../src'
 
 class Demo extends Component {
   render() {
-    return <div>
-      <h1>viztein Demo</h1>
-      <Example/>
-    </div>
+    return (
+      <div>
+        <h1>Viztein Demo</h1>
+        <Viztein
+         data={{ filename: "http://files.rcsb.org/download/4hhb.pdb" }}
+         viewportId="viewport-1"
+        />
+      </div>
+    );
   }
 }
 

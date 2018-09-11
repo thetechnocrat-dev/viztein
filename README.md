@@ -1,16 +1,36 @@
-# viztein
+# Viztein
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+Viztein is a React library component for **vi**suali**z**ing **tein**s and other macromolecules. The code is a light wrapper around [NGL](https://github.com/arose/ngl) which uses [WebGL](https://get.webgl.org/) for rendering graphics.
 
-Describe viztein here.
+[![npm version](https://badge.fury.io/js/viztein.svg)](https://badge.fury.io/js/viztein)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+## Quickstart
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```
+$ npm install viztein
+```
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+```
+import { Viztein } from viztein
+
+<Viztein data={{ filename: 'https://files.rcsb.org/download/4OO8.pdb' }} />
+```
+
+## Installation
+
+### NPM
+
+```
+# latest stable
+$ npm install viztein
+```
+
+### Dev Build
+
+```
+$ git clone https://github.com/mcmenemy/viztein.git
+$ cd viztein
+$ npm install
+$ npm start
+```
