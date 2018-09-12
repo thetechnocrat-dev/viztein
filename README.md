@@ -3,6 +3,7 @@
 Viztein is a React library component for **vi**suali**z**ing pro**tein**s and other macromolecules. The code is a light wrapper around [NGL](https://github.com/arose/ngl) which uses [WebGL](https://get.webgl.org/) for rendering graphics.
 
 [![npm version](https://badge.fury.io/js/viztein.svg)](https://badge.fury.io/js/viztein)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Quickstart
 
@@ -32,13 +33,6 @@ class Example extends React.Component {
 
 [Custom Color](https://jsfiddle.net/mcmenemy/cvo3gq64/)
 
-[Multiple Protein Same Viewport]()
-
-[Multiple Proteins Different Viewports]()
-
-[Licorice]()
-
-
 ## Installation
 
 ### NPM
@@ -50,7 +44,7 @@ $ npm install viztein
 
 ### CDN
 ```html
-<script src="https://unpkg.com/viztein@0.1.4/umd/viztein.js"></script>
+<script src="https://unpkg.com/viztein@0.1.7/umd/viztein.js"></script>
 ```
 
 ### Dev Build
