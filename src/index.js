@@ -32,12 +32,12 @@ class Viztein extends React.PureComponent {
     });
 
     // data can be a single object or array of objects
-    if (typeof data === "object") {
-      this.addProteinToViewport(stage, data);
-    } else {
+    if (Array.isArray(data)) {
       data.forEach(protein => {
         this.addProteinToViewport(stage, protein);
       });
+    } else {
+      this.addProteinToViewport(stage, data);
     }
   }
 
