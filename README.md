@@ -4,9 +4,6 @@ Viztein is a React library component for **vi**suali**z**ing pro**tein**s and ot
 
 [![npm version](https://badge.fury.io/js/viztein.svg)](https://badge.fury.io/js/viztein)
 
-## Examples
-[Basic Example](https://jsfiddle.net/mcmenemy/usq4216m/)
-
 ## Quickstart
 
 ```
@@ -24,6 +21,23 @@ class Example extends React.Component {
   }
 };
 ```
+[JSFiddle](https://jsfiddle.net/mcmenemy/usq4216m/)
+
+## Examples
+[Default with Custom Viewport Style](https://jsfiddle.net/mcmenemy/unf82t7p/)
+
+[Ball and Stick](https://jsfiddle.net/mcmenemy/ho62qcwd/)
+
+[Ball and Stick Custom Ratio](https://jsfiddle.net/mcmenemy/uk0easm9/)
+
+[Custom Color](https://jsfiddle.net/mcmenemy/cvo3gq64/)
+
+[Multiple Protein Same Viewport]()
+
+[Multiple Proteins Different Viewports]()
+
+[Licorice]()
+
 
 ## Installation
 
