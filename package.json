@@ -26,7 +26,10 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "husky": "^1.0.0-rc.14",
+    "lint-staged": "^7.2.2",
     "nwb": "0.23.x",
+    "prettier": "1.14.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   },
@@ -42,5 +45,16 @@
     "webgl",
     "ngl",
     "react"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
