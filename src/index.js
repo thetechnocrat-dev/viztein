@@ -1,6 +1,5 @@
-import React from "react";
-import { Stage } from "ngl";
-
+import React from 'react';
+import { Stage } from 'ngl';
 
 class Viztein extends React.PureComponent {
   addProteinToViewport(stage, protein) {
@@ -17,7 +16,7 @@ class Viztein extends React.PureComponent {
         });
 
         if (
-          !protein.config.some(configItem => configItem.type === "autoView")
+          !protein.config.some(configItem => configItem.type === 'autoView')
         ) {
           stageObj.autoView();
         }
@@ -49,11 +48,11 @@ class Viztein extends React.PureComponent {
 }
 
 Viztein.defaultProps = {
-  viewportId: "viewport",
+  viewportId: 'viewport',
   viewportStyle: {
-    backgroundColor: "black",
-    width: "500px",
-    height: "500px"
+    backgroundColor: 'black',
+    width: '500px',
+    height: '500px'
   }
 };
 
