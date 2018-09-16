@@ -49,7 +49,7 @@ class Viztein extends React.PureComponent {
 }
 
 Viztein.defaultProps = {
-  viewportId: 'viewport',
+  viewportId: 'viztein-viewport',
   viewportStyle: {
     backgroundColor: 'black',
     width: '500px',

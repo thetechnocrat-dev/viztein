@@ -14,7 +14,7 @@ $ npm install viztein
 ```
 import { Viztein } from 'viztein';
 
-class Example extends React.Component {  
+class Example extends React.Component {
   render() {
     return (
       <Viztein data={{ filename: "https://files.rcsb.org/download/4hhb.pdb" }} />
@@ -22,9 +22,11 @@ class Example extends React.Component {
   }
 };
 ```
+
 [JSFiddle](https://jsfiddle.net/mcmenemy/usq4216m/)
 
 ## Examples
+
 [Default with Custom Viewport Style](https://jsfiddle.net/mcmenemy/unf82t7p/)
 
 [Ball and Stick](https://jsfiddle.net/mcmenemy/ho62qcwd/)
@@ -43,8 +45,66 @@ $ npm install viztein
 ```
 
 ### CDN
+
 ```html
 <script src="https://unpkg.com/viztein@0.1.7/umd/viztein.js"></script>
+```
+
+### Component Properties
+
+#### Data (Array or Array of objects) Required
+
+The macromolecule source and display config data.
+
+Requires a filename key which can be a file path or url path to the source data. Supported file types are mmCIF, PDB, PQR, GRO, SDF, MOL2, and MMTF. A config key can also be passed in to change the display options. Each config option contains a type and input. The type is the name of the NGL function to use and the input are the arguments to pass in. A list of display functions is found in the [NGL molecular display documentation](http://nglviewer.org/ngl/api/manual/molecular-representations.html).
+
+data Prop Example:
+
+```
+[
+  {
+    filename: 'https://files.rcsb.org/download/4hhb.pdb',
+    config: [
+      {
+        type: 'addRepresentation',
+        input: ['ball+stick', { color: 'orange' }]
+      }
+    ]
+  },
+  {
+    filename: 'https://files.rcsb.org/download/3PQR.pdb',
+    config: [
+      {
+        type: 'addRepresentation',
+        input: ['cartoon', { color: 'green' }]
+      }
+    ]
+  }
+];
+```
+
+#### ViewportId (string) optional
+
+Id of the div element to render the graphic inside. When rendering multiple Viztein components on the same page, pass in an unique viewportId prop to each Viztein component.
+
+viewportId Default
+
+```
+'viztein-viewport'
+```
+
+#### ViewportStyle (object) optional
+
+CSS style of the viewport.
+
+viewportStyle Default
+
+```
+{
+  backgroundColor: 'black',
+  width: '500px',
+  height: '500px'
+}
 ```
 
 ### Dev Build
