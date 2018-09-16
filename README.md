@@ -108,7 +108,7 @@ viewportStyle Default
 }
 ```
 
-### Dev Build
+## Dev Build
 
 ```
 $ git clone https://github.com/mcmenemy/viztein.git
