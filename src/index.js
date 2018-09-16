@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Stage } from 'ngl';
 
@@ -54,6 +55,29 @@ Viztein.defaultProps = {
     width: '500px',
     height: '500px'
   }
+};
+
+const dataPropShape = {
+  filename: PropTypes.string.isRequired,
+  config: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      input: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.object,
+        PropTypes.string
+      ])
+    })
+  )
+};
+
+Viztein.propTypes = {
+  data: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.shape(dataPropShape)),
+    PropTypes.shape(dataPropShape)
+  ]).isRequired,
+  viewportId: PropTypes.string,
+  viewportStyle: PropTypes.object
 };
 
 export default Viztein;
