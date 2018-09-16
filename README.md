@@ -51,7 +51,7 @@ $ npm install viztein
 <script src="https://unpkg.com/viztein@0.1.7/umd/viztein.js"></script>
 ```
 
-### Component Properties
+## Component Properties
 
 #### Data (Array or Array of objects) Required
 
