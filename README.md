@@ -2,6 +2,7 @@
 
 Viztein is a React library component for **vi**suali**z**ing pro**tein**s and other macromolecules. The code is a light wrapper around [NGL](https://github.com/arose/ngl) which uses [WebGL](https://get.webgl.org/) for rendering graphics.
 
+[![Build Status](https://travis-ci.org/McMenemy/viztein.svg?branch=master)](https://travis-ci.org/McMenemy/viztein)
 [![npm version](https://badge.fury.io/js/viztein.svg)](https://badge.fury.io/js/viztein)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
