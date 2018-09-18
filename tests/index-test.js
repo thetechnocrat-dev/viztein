@@ -1,23 +1,29 @@
-import expect from 'expect'
-import React from 'react'
-import {render, unmountComponentAtNode} from 'react-dom'
+import expect from 'expect';
+import React from 'react';
+import { render, unmountComponentAtNode } from 'react-dom';
 
-import Component from 'src/'
+import Viztein from 'src/';
 
 describe('Component', () => {
-  let node
+  let node;
+
+  let VizteinDidMountMocked = class extends Viztein {
+    componentDidMount() {
+      // Webgl does not work with phantom JS
+      // TODO figure out how to test Webgl portion
+    }
+  };
 
   beforeEach(() => {
-    node = document.createElement('div')
-  })
+    node = document.createElement('div');
+  });
 
   afterEach(() => {
-    unmountComponentAtNode(node)
-  })
+    unmountComponentAtNode(node);
+  });
 
-  it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
-    })
-  })
-})
+  it('renders with default config', () => {
+    render(<VizteinDidMountMocked data={{ filename: './4hhb.pdb' }} />, node);
+    expect(true).toExist();
+  });
+});
