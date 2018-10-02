@@ -14,7 +14,7 @@ $ npm install viztein
 ```
 
 ```
-import { Viztein } from 'viztein';
+import Viztein from 'viztein';
 
 class Example extends React.Component {
   render() {
