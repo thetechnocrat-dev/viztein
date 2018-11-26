@@ -74,7 +74,6 @@ class Viztein extends React.Component {
     });
 
     this.setState({ stage })
-
     // data can be a single object or array of objects
     if (Array.isArray(data)) {
       data.forEach(protein => {
