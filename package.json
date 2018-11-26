@@ -1,10 +1,19 @@
 {
   "name": "viztein",
-  "version": "1.0.0",
+  "version": "0.1.8",
   "description": "Viztein React component",
-  "author": "McMenemy",
+  "author": "Josh McMenemy <josh.mcmenemy@gmail.com>",
   "license": "MIT",
   "repository": "McMenemy/viztein",
+  "keywords": [
+    "react-component",
+    "protein-vizualization",
+    "molecular-graphics",
+    "scientific-visualization",
+    "webgl",
+    "ngl",
+    "react"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -57,5 +66,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "ngl": "^0.10.4"
+  }
 }
