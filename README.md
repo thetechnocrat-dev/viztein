@@ -8,7 +8,7 @@
 ## Quickstart
 
 ```
-$ npm install viztein
+$ npm install viztein@0.1.7
 ```
 
 ```
